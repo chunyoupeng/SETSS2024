@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+#certifyPhoto {
+      position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height:229px;
+}
+
+
+#certifyPhoto  .swiper-slide {
+    width: 550px;
+    height: 309px;
+    background: #fff;
+    box-shadow: 0 8px 30px #ddd;
+}
+#certifyPhoto  .swiper-slide img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#certifyPhoto  .swiper-slide p {
+    line-height: 98px;
+    padding-top: 0;
+    text-align: center;
+    color: #636363;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+#certifyPhoto .swiper-pagination {
+    width: 100%;
+    bottom: 20px;
+}
+
+#certifyPhoto .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+    border: 3px solid #fff;
+    background-color: #d5d5d5;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+#certifyPhoto .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    border: 3px solid #00aadc;
+    background-color: #fff;
+}
+
+#certifyPhoto .swiper-button-prev-photo {
+    left: -30px;
+    width: 45px;
+    height: 45px;
+    background: url("/file/web/images/wm_button_icon.png") no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+
+#certifyPhoto .swiper-button-prev-photo:hover {
+    background-position: 0 -46px;
+    background-size: 100%
+}
+
+#certifyPhoto .swiper-button-next-photo {
+    right: -30px;
+    width: 45px;
+    height: 45px;
+    background: url("/file/web/images/wm_button_icon.png") no-repeat;
+    background-position: 0 -93px;
+    background-size: 100%;
+}
+
+#certifyPhoto .swiper-button-next-photo:hover {
+    background-position: 0 -139px;
+    background-size: 100%
+}
+#certifyPhoto .swiper-slide {
+    width: 300px !important;
+    height: 200px !important;
+    background: #fff;
+    box-shadow: 0 8px 30px #ddd;
+}
+.bg-center-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.swiper-button-next-photo, .swiper-button-prev-photo {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -50px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-pagination-photo  {
+   text-align:center;
+
+}
+

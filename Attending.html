@@ -1,0 +1,532 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>2024 6th International Conference on Information Science, Computer Technology and Transportation（SETTSS 2024）
+    </title>
+    <link rel="icon" href="data:;base64,=">
+    <meta name="keyword"
+        content="International Conference,Conference,Academic conference,International academic conference,Academic e">
+    <meta name="description"
+        content="It concentrates the academic strength of the global professional, and is committed to the communication of scientific and technological information, the exchange of scholars' scientific research, the in-depth analysis of">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.all.js"></script>
+    <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fhk.ais.cn/file/web/js/css/layui.css">
+    <script src="https://img.ais.cn/thirds/common/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fhk.ais.cn/file/web/css/2/index.css">
+    <script src="https://img.ais.cn/thirds/common/jquery.print.js"></script>
+    <link rel="stylesheet" href="https://fhk.ais.cn/file/web/css/swiper.min.css">
+    <link rel="stylesheet" href="https://fhk.ais.cn/file/web/css/zoomify.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fhk.ais.cn/file/web/css/2/newStyle.css">
+    <link rel="stylesheet" type="text/css" href="https://fhk.ais.cn/file/web/css/common.css">
+    <script src="https://fhk.ais.cn/file/web/js/swiper.min.js"></script>
+    <style>
+        .layui-layout-body {
+            overflow: scroll;
+        }
+
+        .station-flexs {
+            display: flex;
+            justify-content: center;
+        }
+
+        .map-container {
+            text-align: center;
+        }
+        .table-container {
+            width: 80%;
+            margin: 100px;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 50px;
+          }
+          table, th, td {
+            border: 1px solid #ddd;
+          }
+          th, td {
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+          h2 {
+            margin-bottom: 5px;
+          }
+    </style>
+</head>
+
+<body>
+
+    <body class="layui-layout-body">
+        <div class="head">
+
+            <div class="header-content select-Color" id="header-content">
+                <div class="head-fixed" id="head-fixed">
+                    <ul class="layui-nav flex-img select-Color">
+                        <img src="photo\logo.png" alt="logo"
+                            class="logo">
+                    </ul>
+                    <ul class="layui-nav layui-title flex-span select-Color">
+                        <p href="./" style="color:rgba(254, 254, 254, 1)">2024 6<sup>th</sup> The Spring School on Engineering Trustworthy Software Systems </p>
+                    </ul>
+                    <ul class="layui-nav select-Color" id="layuibar" style="flex:1;padding:0 !important">
+                        <li class="layui-nav-item"><a href="index.html">Home</a>
+
+
+                        <li class="layui-nav-item" data-param="2"><a href="Committee.html">Committee</a>
+
+
+                        <li class="layui-nav-item" data-param="3"><a href="Speakers.html">Speakers</a>
+
+
+                            <li class="layui-nav-item" data-param="4"><a href="https://easychair.org/cfp/SETSS2024" >Call For Workshop</a>
+                                <!-- <dl class="layui-nav-child">
+                                             <dd><a href="https://easychair.org/cfp/SETSS2024" >Call For Workshop</a></dd>
+                                             <dd><a href="Submission.html" target="_blank">Submission</a></dd>
+                                             <dd><a href="404.html"   >Registration</a></dd>
+                                             <dd><a href="404.html"   >Publication</a></dd>
+                                </dl> -->
+                            </li>
+                        <li class="layui-nav-item" data-param="5"><a href="Program.html">Program</a>
+                        <li class="layui-nav-item" data-param="7"><a href="Attending.html">Transportation</a>
+                        </li>
+                    </ul>
+                    <ul class="layui-nav  layui-icon flex-icon select-Color" id="layui-icon" style="display:none">
+                        <i id="icon-down" class="layui-icon layui-icon-down"
+                            style="font-size: 18px; color: #1E9FFF;"></i>
+                        <i id="icon-up" class="layui-icon layui-icon-up" style="font-size: 18px; color: #1E9FFF;"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.all.js"></script>
+        <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/pc_common.js"></script>
+        <link rel="stylesheet" href="https://fhk.ais.cn/file/web/css/2/content.css">
+        <div class="page-container">  
+            <div class="page-container">
+                <div class="page-text">
+                    <div class="text-container">
+                        <div class="page-container">
+                            <div class="page-container-head">
+                                <a href="./?" class="page-first-span">Home</a>
+                                <div class="head-img">
+                                    <img src="https://fhk.ais.cn/file/web/images/logo-web.png">
+                                </div>
+                                <div class="page-second-span">Transportation</div>
+                            </div>
+                        </div>
+                        <div class="container-command">
+                            <h1 class="h-span">Speakers</h1>
+                        </div>
+    
+                        <div class="container-footer">
+                            <div class="article">
+                                <style>
+                                    .bar {
+                                        position: relative;
+                                        z-index: 999;
+                                    }
+    
+                                    .zsybar {
+                                        margin: -95px -394px -10px;
+                                        padding: 0px 0px;
+                                        position: relative;
+                                    }
+    
+                                    .zsynr {
+                                        margin: 0px -74px -30px;
+                                        padding: 50px 80px;
+                                    }
+    
+                                    .zsybar2 {}
+                                    @media (max-width:768px) {
+                                        .zsybar {
+                                            margin: 0px -42px 0px;
+                                            position: static;
+                                        }
+    
+                                        .zsynr {
+                                            margin: 10px -42px -100px;
+                                            padding: 20px;
+                                        }
+    
+                                        .zsybar2 {
+                                            margin: -150px 0px -10px !important;
+                                        }
+                                    }
+                                </style>
+                                <div class="zsybar"
+                                    style="text-align: center;z-index: 99;background-image: url(https://fhk.ais.cn/cms/website/editor/202309/371230926160255969.jpg);height:150px;">
+                                    <p style="text-shadow: 1px 1px 5px rgba(0,0,0,0.5);"><span
+                                            style="font-size: 30px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;color:#fff;line-height:150px;"><br /></span>
+                                    </p>
+                                </div><!-- 背景图 -->
+                                <div class="select-Color zsybar2"
+                                    style="opacity:0.1;height:150px;padding:auto 0px;margin: -150px -394px -10px;position: relative;z-index:99">
+                                    <p style="text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 5px; text-align: center;"><span
+                                            style="font-size: 30px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;color:#fff;line-height:150px;"><br /></span>
+                                    </p>
+                                </div>
+                                <p style="text-align: center;"><!-- 背景色 --></p>
+                                <div class="zsybar2" style="height:150px;padding:auto auto;margin: -150px -394px -10px;">
+                                    <p style="text-align: center;"><span class="colorOne"
+                                            style="font-size: 30px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;line-height:150px;position: relative;z-index:100;font-weight: lighter">Transportation</span>
+                                    </p>
+                                </div>
+                                <p style="text-align: justify;"><!-- 标题分割 --></p>
+
+                                <!-- 主要内容,表示网站正在建设中，得到消息后删除这个div即可 -->
+                                <!-- <div class="testContainer">
+                                    <div class="container">
+                                        <h1>Site Under Construction</h1>
+                                        <p>Our website is currently under construction and will be available soon. Thank you for your patience.</p>
+                                        <p><a href="index.html">Return to Homepage</a></p>
+                                        <h1>Route and Estimated Costs from the Airport to Southwest University Beibei Campus:</h1>
+                                        <h2>Method 1: Taxi</h2>
+                                    </div> -->
+                                </div>
+                                <div class="table-container">
+                                    <h2>From Chongqing Jiangbei International Airport</h2>
+                                    <table>
+                                      <tr>
+                                        <th>Method</th>
+                                        <th>Route</th>
+                                        <th>Estimated Price</th>
+                                        <th>Estimated Time</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Taxi</td>
+                                        <td>Chongqing Jiangbei International Airport to Southwest University Beibei Campus</td>
+                                        <td>120 yuan</td>
+                                        <td>60 minutes</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Light Rail</td>
+                                        <td>Jiangbei Airport - Line 3 (Hongqi Hegou Station) - Line 6 (Beibei Station)</td>
+                                        <td>7 yuan</td>
+                                        <td>100 minutes</td>
+                                      </tr>
+                                    </table>
+                                  
+                                    <h2>From Chongqing North Station</h2>
+                                    <table>
+                                      <tr>
+                                        <th>Method</th>
+                                        <th>Route</th>
+                                        <th>Estimated Price</th>
+                                        <th>Estimated Time</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Light Rail</td>
+                                        <td>Line 3 (Hongqi Hegou Station) to Line 6 (Beibei Station)</td>
+                                        <td>7 yuan</td>
+                                        <td>90 minutes</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Taxi</td>
+                                        <td>Chongqing North Station to Southwest University Beibei Campus</td>
+                                        <td>100 yuan</td>
+                                        <td>50 minutes</td>
+                                      </tr>
+                                    </table>
+                                  
+                                    <h2>From Chongqing West Station</h2>
+                                    <table>
+                                      <tr>
+                                        <th>Method</th>
+                                        <th>Route</th>
+                                        <th>Estimated Price</th>
+                                        <th>Estimated Time</th>
+                                      </tr>
+                                      <tr>
+                                        <td>Rail Transit Inner Loop Line</td>
+                                        <td>Ranjiaba Station to Line 6 (Beibei Station)</td>
+                                        <td>7 yuan</td>
+                                        <td>100 minutes</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Taxi</td>
+                                        <td>Chongqing West Station to Southwest University Beibei Campus</td>
+                                        <td>120 yuan</td>
+                                        <td>70 minutes</td>
+                                      </tr>
+                                    </table>
+
+                                    <div class="map-container">
+
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.439384200913!2d106.42052007604926!3d29.822736629040314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36ecd66f337fd74b%3A0x3b530345fcad0fb8!2z6KW_5Y2X5aSn5a2m5Y2K5pyI5qW8!5e0!3m2!1szh-CN!2ssg!4v1709203732505!5m2!1szh-CN!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                    </div>
+                                  </div>
+
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <div class="support">
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>
+                        Copyright© &nbsp; ISCTT 2024
+                    </p>
+                    <p>2024 9<sup>th</sup> International Conference on Information Science, Computer Technology and
+                        Transportation &nbsp;&nbsp;
+                        http://www.isctt.net/
+                        <script
+                            type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1281178725'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z.js%3Fid%3D1281178725%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </p>
+                </div>
+            </div>
+        </div>
+<!-- 用后删除这个style -->
+        <style>
+            .testContainer  {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+                text-align: center;
+            }
+            .container {
+                max-width: 600px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            a {
+                color: #0066ff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <style>
+            /*底部*/
+            .footer {
+                width: 100%;
+                height: 100px;
+                background: #333333;
+                -webkit-box-flex: 0;
+                flex: 0 0 100px;
+            }
+
+            .footer-wrap {
+                width: 1200px;
+                height: 100px;
+                left: calc(50% - 600px);
+                background: #333333;
+                color: #989898;
+                font-size: 12px;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .footer-left {
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 527px;
+                display: -webkit-box;
+                display: flex;
+            }
+
+            .support {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 236px;
+            }
+
+            .support>span {
+                line-height: 28px;
+            }
+
+            .supportIcon {
+                width: 101px;
+                height: 28px;
+            }
+
+            .meeting {
+                width: 70px;
+                color: #3CB5DA;
+            }
+
+            .meeting>img {
+                position: absolute;
+            }
+
+            .meeting>div {
+                text-align: center;
+            }
+
+            .footer-right {
+                line-height: 28px;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+            }
+        </style>
+        <style>
+            .colorOne {
+                color: #35477D !important;
+                ;
+            }
+
+            .layui-nav .layui-this:after,
+            .layui-nav-bar,
+            .layui-nav-tree .layui-nav-itemed:after {
+                background-color: #35477D !important;
+            }
+
+            .selected1 {
+                color: #35477D !important;
+            }
+
+            .right-title-info1 {
+                color: #35477D !important;
+                ;
+            }
+
+            .count-down1 {
+                background-color: #35477D !important;
+                ;
+            }
+
+            .row {
+                background-color: #35477D !important;
+                ;
+            }
+
+            .color-change {
+                background: #35477D !important;
+            }
+
+            .color-line {
+                background-color: #35477D !important;
+            }
+
+            .color-important {
+                background: #35477D !important;
+            }
+
+            .dawn-bg {
+                background-color: #35477D !important;
+            }
+
+
+            .select-Color {
+                background: #35477D !important;
+            }
+
+            .layui-nav .layui-nav-more {
+                display: none;
+            }
+
+
+            .layui-hover:hover {
+                background: #35477D !important;
+            }
+
+
+            .layui-nav .layui-nav-child a:hover {
+                background-color: rgba(7, 13, 89, .1) !important;
+            }
+
+            .layui-nav-bar {
+                background-color: white !important;
+            }
+
+            .layui-nav .layui-this:after,
+            .layui-nav-bar,
+            .layui-nav-tree .layui-nav-itemed:after {
+                background-color: !important;
+            }
+
+            .layui-nav-child {
+                background-color: white;
+            }
+
+
+            .layui-nav .layui-nav-child a {
+                color: black !important;
+            }
+
+            .layui-nav .layui-nav-item a {
+                width: auto !important;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .d1-color {
+                border-color: white white white #35477D !important;
+            }
+
+            .layui-nav .layui-this:after,
+            .layui-nav-bar,
+            .layui-nav-tree .layui-nav-itemed:after {
+                background-color: white !important
+            }
+
+            .m-color-bg2 {
+                background: #35477D !important;
+            }
+
+            .m-imp-bg {
+                background: #35477D !important;
+            }
+
+            .m-nav-color {
+                background: #35477D !important;
+            }
+
+            .m2-right-bg1 {
+                background: #35477D !important;
+            }
+
+            .rightNavItem {
+                background: #35477D !important;
+            }
+
+            .bottomNavItem {
+                background: #35477D !important;
+            }
+
+            .bottomLanguage {
+                background: #35477D !important;
+            }
+
+            .rightLanguage {
+                background: #35477D !important;
+            }
+        </style>
+        <script type="text/javascript" src="https://img.ais.cn/thirds/common/stat.js?v=3"></script>
+    </body>
+</html>

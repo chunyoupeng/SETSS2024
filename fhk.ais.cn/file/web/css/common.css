@@ -1,0 +1,69 @@
+li {
+    list-style:inherit;
+}
+.UEditorTable {
+          width: 100%;
+         margin-bottom: 10px;
+     }
+table td, table th {
+    padding: 3px 18px !important;
+}
+pre {
+    font-family: Roboto-Medium, Roboto !important;
+}
+iframe {
+    max-width:  100%;
+}
+
+table td, table th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 3px 5px;
+    word-break: break-word !important;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+table  {
+    width:100%;
+}
+#allmap{
+    width:100%;
+    height:300px !important;
+}
+
+.rotation_chart{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: initial;
+}
+
+.layui-nav-eight  {
+    background: white !important;
+}
+.layui-nav-eight .layui-nav-item a {
+    opacity: 1;
+    font-size: 14px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.layui-nav-eight  .layui-hover:hover {
+    background: white !important;
+}
+.layui-nav-eight  .layui-hover:hover .layui-nav-item a {
+    background: white !important;
+}
+
+.layui-nav-eight  .layui-nav-item a:hover, .layui-nav .layui-this a {
+    font-family: PingFangSC, PingFangSC-Semibold;
+    font-weight: 600;
+}
+.eight-content .new-row1 {
+    margin-bottom: 35px;
+    margin-left: 11px!important;
+    margin-right: 11px!important;
+    padding-right: 0px !important;
+}

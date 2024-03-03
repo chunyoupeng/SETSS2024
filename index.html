@@ -1,0 +1,952 @@
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title id="title">2024 6th The Spring School on Engineering Trustworthy Software Systems (SETSS 2024)</title>
+    <meta name="keyword" content="International Conference,Conference,Academic conference,International academic conference,Academic e">
+    <meta name="description" content="It concentrates the academic strength of the global professional, and is committed to the communication of scientific and technological information, the exchange of scholars' scientific research, the in-depth analysis of">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.all.js"></script>
+   <script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.js"></script>
+   <link rel="stylesheet"  type="text/css"  href="https://fhk.ais.cn/file/web/js/css/layui.css">
+   <link rel="stylesheet" type="text/css"  href="https://fhk.ais.cn/file/web/css/2/index.css">
+   <script src="https://img.ais.cn/thirds/common/jquery-1.12.4.min.js"></script>
+   <script src="https://img.ais.cn/thirds/common/jquery.print.js"></script>
+   <link rel="stylesheet" href="https://fhk.ais.cn/file/web/css/swiper.min.css">
+   <script src="https://fhk.ais.cn/file/web/js/swiper.min.js"></script>
+    <link rel="stylesheet" type="text/css"  href="https://fhk.ais.cn/file/web/css/2/newStyle.css">
+    <link rel="stylesheet" type="text/css"  href="https://fhk.ais.cn/file/web/css/common.css">
+   <style>
+    .layui-layout-body {
+      overflow: scroll;
+    }
+    .station-flexs {
+      display: flex;
+      justify-content: center;
+      width : 1200px;
+      margin : 0 auto;
+    }
+   </style>
+</head>
+
+<body>
+		<body class="layui-layout-body">
+<div class="head">
+
+  <div class="header-content select-Color" id="header-content">
+    <div class="head-fixed" id="head-fixed">
+        <ul class="layui-nav flex-img select-Color" >
+            <img src="photo\logo.png" alt="logo" class="logo">
+          </ul>
+      <ul class="layui-nav layui-title flex-span select-Color">
+          <p href="./" style="color:rgba(254, 254, 254, 1)">2024 6<sup>th</sup> The Spring School on Engineering Trustworthy Software Systems </p>
+      </ul>
+      <ul class="layui-nav select-Color" id ="layuibar" style="flex:1;padding:0 !important">
+        <li class="layui-nav-item"><a href="index.html" >Home</a>
+    
+      
+                  <li class="layui-nav-item" data-param="2"><a href="Committee.html"  >Committee</a>
+          
+      
+                  <li class="layui-nav-item" data-param="3"><a href="Speakers.html"  >Speakers</a>
+          
+      
+                  <li class="layui-nav-item" data-param="4"><a href="https://easychair.org/cfp" >Call For Workshop</a>
+                      <!-- <dl class="layui-nav-child">
+                                   <dd><a href="https://easychair.org/cfp/SETSS2024" >Call For Workshop</a></dd>
+                                   <dd><a href="Submission.html" target="_blank">Submission</a></dd>
+                                   <dd><a href="404.html"   >Registration</a></dd>
+                                   <dd><a href="404.html"   >Publication</a></dd>
+                      </dl> -->
+                  </li>
+          
+      
+                  <li class="layui-nav-item" data-param="5"><a href="Program.html"  >Program</a>
+          
+      
+                  <li class="layui-nav-item" data-param="7"><a href="Attending.html"  >Transportation</a>
+                  </li>
+          
+          
+      </ul>
+		 <ul class="layui-nav  layui-icon flex-icon select-Color"  id="layui-icon" style = "display:none">
+	        <i id="icon-down" class="layui-icon layui-icon-down" style="font-size: 18px; color: #1E9FFF;"></i>
+	        <i id="icon-up" class="layui-icon layui-icon-up" style="font-size: 18px; color: #1E9FFF;"></i>
+	     </ul>
+    </div>
+  </div>    
+</div>
+<script type="application/javascript" src="https://fhk.ais.cn/file/web/js/layui.all.js"></script>
+<script type="application/javascript" src="https://fhk.ais.cn/file/web/js/pc_common.js"></script>
+		<div class="layui-carousel" id="test" lay-filter="test1">
+        <div carousel-item>
+            <div><img class="rotation_chart" src="photo\background\carousel06.png" style="width:100%; height:100%;object-fit: fill"/></div>
+            <!-- <div><img class="rotation_chart" src="fhk.ais.cn\cms\website\functional\pic\202312\carousel06.png"/></div> -->
+        </div>
+    </div>
+
+<script type="text/javascript">
+    //轮播样式1
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test'
+            , width: '100%' //设置容器宽度
+            , height: '480px'
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'fade' //切换动画方式
+        });
+    });
+
+    //轮播样式4
+    var length = $(".swiper-wrapper").children(".swiper-slide").length
+    certifySwiper = new Swiper('#certify .swiper-container', {
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: length <= 1 ? false : true,
+        loopedSlides: 5,
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            //clickable :true,
+        },
+        on: {
+            progress: function (progress) {
+                for (i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i);
+                    var slideProgress = this.slides[i].progress;
+                    modify = 1;
+                    if (Math.abs(slideProgress) > 1) {
+                        modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                    }
+                    translate = slideProgress * modify * 260 + 'px';
+                    scale = 1 - Math.abs(slideProgress) / 5;
+                    zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                    slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                    slide.css('zIndex', zIndex);
+                    slide.css('opacity', 1);
+                    if (Math.abs(slideProgress) > 3) {
+                        slide.css('opacity', 0);
+                    }
+                }
+            },
+            setTransition: function (transition) {
+                for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                }
+
+            }
+        }
+
+    })
+
+    //轮播样式3
+    var viewSwiper = new Swiper('.view .swiper-container', {
+        on: {
+            slideChangeTransitionStart: function () {
+                updateNavPosition()
+            }
+        }
+    })
+
+    $('.view .arrow-left,.preview .arrow-left').on('click', function (e) {
+        e.preventDefault()
+        if (viewSwiper.activeIndex == 0) {
+            viewSwiper.slideTo(viewSwiper.slides.length - 1, 1000);
+            return
+        }
+        viewSwiper.slidePrev()
+    })
+    $('.view .arrow-right,.preview .arrow-right').on('click', function (e) {
+        e.preventDefault()
+        if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
+            viewSwiper.slideTo(0, 1000);
+            return
+        }
+        viewSwiper.slideNext()
+    })
+
+    var previewSwiper = new Swiper('.preview .swiper-container', {
+        //visibilityFullFit: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        on: {
+            tap: function () {
+                viewSwiper.slideTo(previewSwiper.clickedIndex)
+            }
+        }
+    })
+
+    function updateNavPosition() {
+        $('.preview .active-nav').removeClass('active-nav')
+        var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
+        if (!activeNav.hasClass('swiper-slide-visible')) {
+            if (activeNav.index() > previewSwiper.activeIndex) {
+                var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
+                previewSwiper.slideTo(activeNav.index() - thumbsPerNav)
+            } else {
+                previewSwiper.slideTo(activeNav.index())
+            }
+        }
+    }
+</script>
+
+
+ <div class="station-flexs">
+    <div class="en-content" style=" width : 1200px;margin : 0 auto;" >
+    	<link rel="stylesheet" type="text/css"  href="https://fhk.ais.cn/file/web/css/2/sidebar.css">
+<script type="application/javascript" src="https://fhk.ais.cn/file/web/js/jquery.qrcode.min.js"></script>
+<script>
+
+  function goToTop() {
+    let sTop = document.documentElement.scrollTop + document.body.scrollTop
+    if(sTop === 0) {
+      clearTimeout(this.timer)
+      return false
+    }
+    window.scrollBy(0, -200)
+    this.timer = setTimeout(() => {
+      this.goToTop()
+    },30)
+  }
+
+	$(function (){
+		var logo =  $('.logo').attr('src');
+
+	 	$("#qrcode").qrcode({
+	    render:"canvas",
+	    width:105,
+	    height:105,
+	    text:homeUrl+"?lang=en&pf=1",
+	    background : "#ffffff", //二维码的后景色
+        foreground : "#000000", //二维码的前景色
+		});
+
+ 	})
+
+ 	function openqq(data){
+ 		var title = $("#title").text();
+ 		var logo =$('.logo').attr('src');
+ 		if(!data){ // 没有分享语
+ 			data = "我在 艾思学术 发现一个不错的活动 自主建站，分享给大家看看";
+ 		}
+ 		var url = "https://connect.qq.com/widget/shareqq/index.html?url="+homeUrl+"?lang=en";
+ 			url+="&showcount=0&desc="+data+"&summary=&title="+title;
+ 			url+= "&pics="+logo;
+ 			url+= "&style=550&width=550&height=550"+",_blank"+",height=800, width=800, top=0, left=0";
+	 	window.open(url);
+ 	}
+
+ 		function openwb(data){
+ 		var title = $("#title").text();
+ 		var logo =$('.logo').attr('src');
+ 		if(!data){ // 没有分享语
+ 			data = "我在 艾思学术 发现一个不错的活动: 自主建站，分享给大家看看";
+ 		}
+ 		var url = "https://service.weibo.com/share/share.php?url="+homeUrl+"?lang=en";
+ 			url+="&title="+data;
+ 			url+= "&pics="+logo;
+ 			url+= "&searchPic=false,_blank,height=800,width=800";
+	 	window.open(url);
+ 	}
+
+ 	//微信分享二维码显示与隐藏
+	 	function over(){
+	　　document.getElementById("shareWx").style.display="";//显示
+	   }
+	   function out(){
+	     document.getElementById("shareWx").style.display="none";//隐藏
+	   }
+
+</script>
+     	    <div>
+            <div class="meeting-spans">
+                <div><style>.zsytime{
+  margin: 0px -359px; padding: 80px 350px 0px;
+   }
+   
+   @media (max-width:768px) {
+    .zsytime{
+  margin: -35px -17px 0px -22px; padding: 10px 20px;
+   }
+  }</style><div class="zsytime" style=" text-align: center;background:rgba(245,245,245);z-index:99;float:none;box-shadow: 0px -10px 10px rgba(0,0,0,0.3)"><div id="jxdh"><p style="box-sizing: border-box;font-size: 34px; "><span style="color: #000000;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Welcome to SETSS 2024!</span></strong></span></p><div style="box-sizing: border-box; margin: 30px 0px 0px 0px; padding: 0px; border: none; outline: none; position: relative;"><div style="box-sizing: border-box; display: inline-block; min-width: 120px; margin: 15px; height: 110px; padding: 20px; box-shadow: rgba(0, 0, 0, 0.2) 1px 10px 20px; border-radius: 4px; background: rgb(255, 255, 255); font-size: 16px; letter-spacing: 1px; text-transform: uppercase; line-height: 22px; border-left: none;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><span id="days" class="count" style="box-sizing: border-box; margin: 0px; padding: 0px; outline: none; position: relative; display: block; font-size: 40px; line-height: 1em; font-weight: 700; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">00</span>Days</span></div><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp;</span><div style="box-sizing: border-box; display: inline-block; min-width: 120px; margin: 15px; height: 110px; padding: 20px; box-shadow: rgba(0, 0, 0, 0.2) 1px 10px 20px; border-radius: 4px; background: rgb(255, 255, 255); font-size: 16px; letter-spacing: 1px; text-transform: uppercase; line-height: 22px; border-left: none;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><span id="hours" class="count" style="box-sizing: border-box; margin: 0px; padding: 0px; outline: none; position: relative; display: block; font-size: 40px; line-height: 1em; font-weight: 700; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">00</span>Hours</span></div><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp;</span><div style="box-sizing: border-box; display: inline-block; min-width: 120px; margin: 15px; height: 110px; padding: 20px; box-shadow: rgba(0, 0, 0, 0.2) 1px 10px 20px; border-radius: 4px; background: rgb(255, 255, 255); font-size: 16px; letter-spacing: 1px; text-transform: uppercase; line-height: 22px; border-left: none;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><span id="minutes" class="count" style="box-sizing: border-box; margin: 0px; padding: 0px; outline: none; position: relative; display: block; font-size: 40px; line-height: 1em; font-weight: 700; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">00</span>Minutes</span></div><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp;</span><div style="box-sizing: border-box; display: inline-block; min-width: 120px; margin: 15px; height: 110px; padding: 20px; box-shadow: rgba(0, 0, 0, 0.2) 1px 10px 20px; border-radius: 4px; background: rgb(255, 255, 255); font-size: 16px; letter-spacing: 1px; text-transform: uppercase; line-height: 22px; border-left: none;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><span id="seconds" class="count" style="box-sizing: border-box; margin: 0px; padding: 0px; outline: none; position: relative; display: block; font-size: 40px; line-height: 1em; font-weight: 700; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">00</span>Second</span></div></div></div><hr style="margin-bottom: 0px; margin-top: 80px;border:none;background:#7f7f7f"/></div><script>let date = new Date()
+        let year =  date.getFullYear()
+        let month = date.getMonth()+1
+        let day = date.getDate()
+        let clock = document.querySelector('.clock')
+        let days = document.querySelector('#days')
+        let hours = document.querySelector('#hours')
+        let minutes = document.querySelector('#minutes')
+        let seconds = document.querySelector('#seconds')
+        
+ 
+        
+        countTime()
+        function countTime(){
+        let now = +new Date()
+        //2、得到指定时间的时间戳 
+        let last = +new Date('2024-4-20 13:00:00')  //目标日期
+        // 3、计算剩余的毫秒数/1000 == 剩余的秒数
+        let count = (last-now) / 1000
+        // 4、转换为天时分秒
+        d = parseInt(count/60/60/24)
+        d = d < 10 ? '0' + d : d
+        days.innerHTML = d
+        h= parseInt(count/60/60%24)
+        h = h < 10 ? '0' + h : h
+        hours.innerHTML = h
+        m = parseInt(count/60%60)
+        m = m < 10 ? '0' + m : m
+        minutes.innerHTML = m
+        s = parseInt(count%60)
+        s = s < 10 ? '0' + s : s
+        seconds.innerHTML = s
+			if(count <= 0){
+				days.innerHTML="00"
+				hours.innerHTML="00"
+				minutes.innerHTML="00"
+				seconds.innerHTML= "00"
+          }
+        }
+        setInterval(countTime,1000)</script></script></div>
+            </div>
+    </div>
+    <div>
+            <div class="meeting-spans">
+                <div><style>.zsy1{
+ margin: 0px -359px 0px; padding: 40px 350px 40px;
+   }
+   
+   @media (max-width:768px) {
+    .zsy1{
+  margin: -85px -17px 0px -22px; padding: 20px 20px;
+   }
+  }</style><div class="zsy1" style="  border: none; background:rgbA(245,245,245);" align="left"><table data-sort="sortDisabled"><tbody><tr class="firstRow"><td id="rightdh" valign="top" style="word-break: break-all;border: none;" align="center" rowspan="1" colspan="3"><p style="margin-bottom: 24px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 20px;">2024 6</span><sup style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">th</sup><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 20px;"> The Spring School on Engineering Trustworthy Software Systems (SETSS 2024)</span></p><hr style="width: 290px;margin-bottom: 24px;background:#7f7f7f" align="left"/><p style="text-align: justify; line-height: 1.5em; margin-bottom: 24px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; color: #595959;">Lecture Hall 0114, Building 25, Southwest University, Chongqing, China.</span></p><p style="margin-bottom: 24px; text-align: justify; line-height: 1.5em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; color: #595959;">
+  From 2014 to 2019, we organized five annual consecutive editions of the International School on Engineering Trustworthy Software Systems (SETSS). These editions were very successful and popular within the software engineering community, particularly among young researchers interested in formal methods for trustworthy software. Unfortunately, we had to suspend the 6th edition while in the midst of organizing it due to the Covid pandemic. We are now pleased to announce the resumption of the school, with the postponed 6th edition scheduled to take place from April 15-21, 2024, at Southwest University in Chongqing, China.
+
+  The academic program of SETSS 2024 will offer approximately five to six one-day courses, along with a one-and-a-half-day workshop. This year's thematic focus is on the modeling, specification, and verification of human-cyber-physical systems. The courses will be led by internationally renowned experts in the field, invited by the Academic Committee of SETSS 2024. Following the five days of taught courses, the workshop will provide an opportunity for school participants to exchange research ideas. This will include presentations on proposed research questions, ongoing work, and new research results. There will be a separate Call for Papers for the workshop. It is planned 
+  
+  In addition to the academic schedule, we will also organize social events aimed at fostering informal discussions about research, teaching, and potential collaborations. These events will also offer participants the opportunity to enjoy the historical and cultural sights of Chongqing, a city renowned for its attractiveness as a tourist destination.
+  
+  The previous editions have resulted in Springer LNCS volumes after the event. We still need to secure an agreement for the proceedings for this  school, but we are confident, given our track record in this and other Springer proposals.</span></p><p style="text-align: justify; line-height: 1.5em; margin-bottom: 24px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px; color: #595959;">We warmly invite you to participate in SETSS 2024 and look forward to seeing you in Chongqing, China.</span></p></td></tr><tr class="firstRow"><td id="rightdh" valign="top" style="word-break: break-all;border: none;" align="center"><br/></td><td id="rightdh" valign="top" style="word-break: break-all;border: none;" align="center"><br/></td><td id="rightdh" valign="top" style="word-break: break-all;border: none;" align="center"><br/></td></tr></tbody></table></div></div>
+            </div>
+    </div>
+<div class="map-content">
+            <link rel="stylesheet" href="https://fhk.ais.cn/file/web/css/photo/photo.css">
+        <div style="margin: 0 auto;width: 921px;">
+            <div id="certifyPhoto">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="photo\2019\01.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\02.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\03.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\04.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\05.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9290.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="photo\2019\K07A9568.JPG" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9384.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9380.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9355.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9353.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photo\2019\DSC_9328.jpg" />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="swiper-pagination-photo"></div>
+                <div class="swiper-button-prev-photo"></div>
+                <div class="swiper-button-next-photo"></div>
+
+            </div>
+        </div>
+
+</div>
+<script type="text/javascript">
+    //视频样式4
+    certifySwiperPhoto = new Swiper('#certifyPhoto .swiper-container', {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 5,
+        autoplay: false,
+        navigation: {
+            nextEl: '.swiper-button-next-photo',
+            prevEl: '.swiper-button-prev-photo',
+        },
+        pagination: {
+            el: '.swiper-pagination-photo',
+            //clickable :true,
+        },
+        on: {
+            progress: function (progress) {
+                for (i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i);
+                    var slideProgress = this.slides[i].progress;
+                    modify = 1;
+                    if (Math.abs(slideProgress) > 1) {
+                        modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                    }
+                    translate = slideProgress * modify * 10 + 'px';
+                    scale = 1 - Math.abs(slideProgress) / 5;
+                    zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                    slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                    slide.css('zIndex', zIndex);
+                    slide.css('opacity', 1);
+                    if (Math.abs(slideProgress) > 3) {
+                        slide.css('opacity', 0);
+                    }
+                }
+            },
+            setTransition: function (transition) {
+                for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                }
+
+            }
+        }
+
+    })
+</script>
+    <div>
+            <div class="meeting-spans">
+                <div><style>.zsy2{
+margin: 0px -359px 0px; padding: 40px 350px 100px; 
+   }
+   
+   @media (max-width:768px) {
+    .zsy2{
+  margin: -40px -17px 0px -22px; padding: 20px 20px;
+   }
+  }</style>
+</div>
+            </div>
+    </div>
+    <div>
+            <div class="meeting-spans">
+                <div><style>.zsydate{
+ margin:0px -359px 0px; padding: 50px 350px 50px;
+   }
+   
+   @media (max-width:768px) {
+    .zsydate{
+  margin: -85px -17px 0px -22px; padding: 10px 20px;
+   }
+  }</style><div class="zsydate" style="background-image: url(https://tpl-cc31dd5-pic42.websiteonline.cn/upload/gdbg_6c7q.jpg);" align="center"><p style="margin-bottom: 24px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; color: #FFFFFF;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 30px;">IMPORTANT DATES</span></strong></span></p><table><tbody><tr class="firstRow"><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 12px;"><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Full Paper Submission Date</span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 12px;"><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Registration Deadline</span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 12px;"><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Final Paper Submission Date</span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;" align="center"><p style="margin-bottom: 12px;"><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Conference Dates</span></p></td></tr><tr><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 12px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><strong><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">April 18, 2024</span></strong></span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 0px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><strong><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">May 18, 2024</span></strong></span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;border-right: 1px solid #ffffff;" align="center"><p style="margin-bottom: 0px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><strong><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">May 28, 2024</span></strong></span></p></td><td width="354" valign="top" style="word-break: break-all;border: none;" align="center"><p style="margin-bottom: 0px;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><strong><span style="font-size: 16px; color: #FFFFFF; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">April 14-21, 2024</span></strong></span></p></td></tr></tbody></table></div></div>
+            </div>
+    </div>
+    <div>
+            <div class="meeting-spans">
+                <div><style>.zsySUP{
+margin: 0px -359px 0px; padding: 50px 350px 50px; 
+   }
+   
+   @media (max-width:768px) {
+    .zsySUP{
+  margin: 0px -17px -70px -30px; padding: 10px 20px;
+      position: relative;
+   }
+  }</style>
+<!--                    <div class="zsySUP" style="background:rgb(255,255,255);"><div id="downdh2"><p style="margin-top: 0px; margin-bottom: 12px; text-align: center;"><br/></p>-->
+<!--                    <p style="margin-bottom: 24px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Sponsor</span></strong></p>-->
+<!--                    <table class="UEditorTable" data-sort="sortDisabled" align="center"><tbody><tr class="firstRow"><td valign="middle" style="margin: 0px; padding: 3px 5px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); border-color: rgb(255, 255, 255); overflow-wrap: break-word; white-space: pre-wrap; word-break: break-all;" align="center" rowspan="1" colspan="1"><p>&nbsp;</p><p style="text-align:center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215110811442.png" alt="西南科技大学计算机科学与技术学院.png" width="563" height="65" border="0" vspace="0" style="width: 563px; height: 65px;"/></p></td></tr></tbody></table><p style="margin-bottom: 24px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">Co-organizer</span></strong></p><p style="margin-bottom: 24px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></strong></p><table class="UEditorTable" width="1168"><tbody><tr class="firstRow"><td valign="middle" style="border-color: rgb(255, 255, 255);" width="583" align="center"><p style="text-align:center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215111926481.png" alt="西华师范大学计算机学院.png"/></p></td><td valign="middle" style="border-color: rgb(255, 255, 255);" width="583" align="center"><p style="text-align:center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215111854473.png" alt="image.png"/></p></td></tr></tbody></table><p style="margin-bottom: 24px;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span></strong></p><table class="UEditorTable"><tbody><tr class="firstRow"><td valign="middle" style="border-color: rgb(255, 255, 255);" width="355" align="center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215112155521.png" alt="绵阳市移动物联射频识别技术重点实验室2.png" width="300" height="96" border="0" vspace="0" style="width: 300px; height: 96px;"/></td><td valign="middle" style="border-color: rgb(255, 255, 255);" width="280" align="center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215112202535.png" alt="aeic.png"/></td><td valign="middle" style="border-color: rgb(255, 255, 255);" width="487" align="center"><img src="https://fhk.ais.cn/cms/website/editor/202312/396231215112208540.png" alt="image-removebg-preview (3).png"/></td></tr></tbody></table><p style="text-align: center;"><br/></p></div></div></div>-->
+<!--            </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--            <div class="meeting-spans">-->
+<!--                <div>-->
+                    <style>.sub{
+    color:#fff;
+  }
+  
+  
+  
+  .header-content{
+box-shadow: 0px 10px 10px rgba(0,0,0,0.3) !important;
+}.input1 {
+	text-shadow:0.2px 0.2px 1px rgba(0,0,0,0.5);
+	border: none;
+	font-weight:inherit;  /*字体粗细*/
+		text-decoration:none;/*超链接文字不划线*/
+	padding: 10px 40px; 
+	border-radius: 50px; 
+	color: white;
+	outline: none; 
+  transition: all 500ms ease 0s;
+	position: relative; }
+	
+.input1:before{
+	border: none;
+	content: ''; 
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 50%); 
+	background-size: 210% 100%; 
+	background-position: right bottom; 
+	position: absolute; 
+	top: 0; bottom:0; right:0; left: 0; 
+	border-radius: 30px; 
+	transition: all 0.5s; -webkit-transition: all 0.5s; }
+	.input1:hover{
+		background-image: linear-gradient(to left, #28aaff, #008bff); 
+		border: none;
+		color: #ffffff;
+  transition: all 500ms ease 0s;
+	}
+.cs {background-image: linear-gradient(to left, #28aaff, #008bff); 
+	border: none; }
+.cs:hover:before { background-position: left bottom;border: none; 
+	}
+	
+	.bk{
+  opacity:1;
+  transition: all 500ms ease 0s;
+	}
+	.bk:hover{
+  opacity:0.5;
+  transition: all 500ms ease 0s;
+	}
+.bk1{
+		color:#000000;
+		background:#ffffff;
+		box-sizing:border-box;
+		transition: all 500ms ease 0s;
+		border: none;
+		
+		border-radius: 40px;
+	}
+	.bk1:hover{background:#ffffff;
+		box-sizing:border-box;
+		transition: all 500ms ease 0s;
+  border: none;
+		box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+	}
+  #jxdh{
+            animation: movefromjx 2s;
+            animation-fill-mode: forwards;
+        }
+ 
+        @keyframes movefromjx {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+		
+#leftdh{}
+#leftdh2{}
+        #leftdh.move, #leftdh2.move{
+            animation: movefromleft 2s;
+            animation-fill-mode: forwards;
+        }
+ 
+        @keyframes movefromleft {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+
+#rightdh {}
+#rightdh2 {}
+        #rightdh.move, #rightdh2.move {
+            animation: movefromright 2s;
+            animation-fill-mode: forwards;
+        }
+ 
+        @keyframes movefromright {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+#topdh {}
+ #topdh2 {}
+        #topdh.move, #topdh2.move {
+            animation: movefromtop 2s;
+            animation-fill-mode: forwards;
+        }
+ 
+        @keyframes movefromtop {
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+#downdh {}
+ #downdh2 {}
+  #downdh3 {}
+        #downdh.move, #downdh2.move, #downdh3.move {
+            animation: movefromdown 2s;
+            animation-fill-mode: forwards;
+        }
+ 
+        @keyframes movefromdown {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }</style><script>window.onload = (event) =>{
+        const leftdh = document.getElementById('leftdh');
+  const leftdh2 = document.getElementById('leftdh2');
+   const rightdh = document.getElementById('rightdh');
+  const rightdh2 = document.getElementById('rightdh2');
+  const topdh = document.getElementById('topdh');
+  const topdh2 = document.getElementById('topdh2');
+  const downdh = document.getElementById('downdh');
+  const downdh2 = document.getElementById('downdh2');
+  const downdh3 = document.getElementById('downdh3');
+  
+        const animationClass = 'move';
+        // 创建监听
+        const intersectionObserver = new IntersectionObserver((entries) => {
+            for (entry of entries) {
+                if (entry.intersectionRatio > 0) {
+                    addAnimationClass(entry.target, animationClass);
+                } else {
+                    console.log(animationClass);
+                    removeAnimationClass(entry.target, animationClass);
+                }
+            }
+        });
+        // 添加动画class的操作
+        function addAnimationClass(elem, animationClass) {
+            elem.className.includes(animationClass) ? 1 : elem.className = elem.className + ' ' + animationClass;
+        }
+       // 移除动画class的操作
+//function removeAnimationClass(elem, animationClass) {
+//     elem.className.includes(animationClass) ? elem.className = elem.className.replace(animationClass, '') : 1;
+//       console.log(elem.className);
+//  }    
+        // 开启监听
+ intersectionObserver.observe(leftdh);
+intersectionObserver.observe(rightdh);
+intersectionObserver.observe(leftdh2);
+intersectionObserver.observe(rightdh2);
+intersectionObserver.observe(downdh);
+intersectionObserver.observe(downdh2);
+intersectionObserver.observe(topdh);
+intersectionObserver.observe(downdh3);
+intersectionObserver.observe(topdh2);
+    }</script></div>
+            </div>
+    </div>
+
+
+
+    </div>
+  </div>
+
+
+ <div class="footer">
+     <div class="footer-wrap">
+         <div class="footer-left">
+             <div class="support">
+
+             </div>
+         </div>
+         <div class="footer-right">
+             <p>
+                 Copyright© &nbsp; SETSS 2024
+             </p>
+             <p>
+                 2024 6<sup>th</sup> The  School on Engineering Trustworthy Software Systems &nbsp;&nbsp;
+                 https://www.rise-swu.cn/SETSS2024
+                 <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1281178725'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z.js%3Fid%3D1281178725%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+             </p>
+         </div>
+     </div>
+ </div>
+
+
+<style>
+    /*底部*/
+    .footer {
+        width: 100%;
+        height: 100px;
+        background: #333333;
+        -webkit-box-flex: 0;
+        flex: 0 0 100px;
+    }
+
+    .footer-wrap {
+        width: 1200px;
+        height: 100px;
+        left: calc(50% - 600px);
+        background: #333333;
+        color: #989898;
+        font-size: 12px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .footer-left {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 527px;
+        display: -webkit-box;
+        display: flex;
+    }
+
+    .support {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 236px;
+    }
+
+    .support > span {
+        line-height: 28px;
+    }
+
+    .supportIcon {
+        width: 101px;
+        height: 28px;
+    }
+
+    .meeting {
+        width: 70px;
+        color: #3CB5DA;
+    }
+
+    .meeting > img {
+        position: absolute;
+    }
+
+    .meeting > div {
+        text-align: center;
+    }
+
+    .footer-right {
+        line-height: 28px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+
+</style>
+<script>
+
+    function getClassDomList(className) {
+        return document.getElementsByClassName(className)
+    }
+
+    String.prototype.colorRgb = function () {
+        // 16进制颜色值的正则
+        var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+        // 把颜色值变成小写
+        var color = this.toLowerCase();
+        if (reg.test(color)) {
+            // 处理六位的颜色值，转为RGB
+            var colorChange = [];
+            for (var i = 1; i < 7; i += 2) {
+                colorChange.push(parseInt("0x" + color.slice(i, i + 2)));
+            }
+            return "RGBA(" + colorChange.join(",") + ")";
+        } else {
+            return color;
+        }
+    };
+
+    var classlist = ['color-title', '.color1'];
+    let color = '#35477D'.colorRgb();
+    color = color.slice(0, color.length - 1) + ",0.1)";
+
+    for (let i = 0; i < classlist.length; i++) {
+        const list = getClassDomList(classlist[i])
+        for (let i = 0; i < list.length; i++) {
+            list[i].style.setProperty('background', color, 'important')
+        }
+    }
+
+</script>
+
+<style>
+    .colorOne {
+        color: #35477D !important;;
+    }
+
+    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+        background-color: #35477D !important;
+    }
+
+    .selected1 {
+        color: #35477D !important;
+    }
+
+    .right-title-info1 {
+        color: #35477D !important;;
+    }
+
+    .count-down1 {
+        background-color: #35477D !important;;
+    }
+
+    .row {
+        background-color: #35477D !important;;
+    }
+
+    .color-change {
+        background: #35477D !important;
+    }
+
+    .color-line {
+        background-color: #35477D !important;
+    }
+
+    .color-important {
+        background: #35477D !important;
+    }
+
+    .dawn-bg {
+        background-color: #35477D !important;
+    }
+
+
+    .select-Color {
+        background: #35477D !important;
+    }
+
+    .layui-nav .layui-nav-more {
+        display: none;
+    }
+
+
+    .layui-hover:hover {
+        background: #35477D !important;
+    }
+
+
+    .layui-nav .layui-nav-child a:hover {
+        background-color: rgba(7, 13, 89, .1) !important;
+    }
+
+    .layui-nav-bar {
+        background-color: white !important;
+    }
+
+    .layui-nav .layui-this:after,
+    .layui-nav-bar,
+    .layui-nav-tree .layui-nav-itemed:after {
+        background-color:  !important;
+    }
+
+    .layui-nav-child {
+        background-color: white;
+    }
+
+
+    .layui-nav .layui-nav-child a {
+        color: black !important;
+    }
+
+    .layui-nav .layui-nav-item a {
+        width: auto !important;
+        color : rgba(255,255,255,1);
+    }
+
+    .d1-color {
+        border-color: white white white #35477D !important;
+    }
+
+    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+        background-color: white !important
+    }
+    .m-color-bg2{
+        background: #35477D !important;
+    }
+
+    .m-imp-bg{
+        background: #35477D !important;
+    }
+    .m-nav-color{
+        background: #35477D !important;
+    }
+    .m2-right-bg1{
+        background: #35477D !important;
+    }
+    .rightNavItem{
+        background: #35477D !important;
+    }
+    .bottomNavItem{
+        background: #35477D !important;
+    }
+
+    .bottomLanguage{
+        background: #35477D !important;
+    }
+    .rightLanguage{
+        background: #35477D !important;
+    }
+
+</style>
+
+
+<script type="text/javascript" src="https://img.ais.cn/thirds/common/stat.js?v=3"></script>
+</body>
+</html>
