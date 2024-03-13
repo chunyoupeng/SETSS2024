@@ -30,6 +30,59 @@
             display: flex;
             justify-content: center;
         }
+        .slider {
+            width: 100%;
+            height: 800px; /* 根据需要调整高度 */
+            overflow: hidden;
+            position: relative;
+          }
+          
+          .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slide 30s infinite; /* 每个幻灯片停留1.5秒,一共6张图片,所以动画时间为13.5秒 */
+          }
+          
+          .slide {
+            flex: 0 0 100%;
+            position: relative;
+          }
+          
+          .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+          }
+          
+          @keyframes slide {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(0); }
+            20% { transform: translateX(-100%); }
+            30% { transform: translateX(-100%); }
+            40% { transform: translateX(-200%); }
+            50% { transform: translateX(-200%); }
+            60% { transform: translateX(-300%); }
+            70% { transform: translateX(-300%); }
+            80% { transform: translateX(-400%); }
+            90% { transform: translateX(-400%); }
+            100% { transform: translateX(-500%); }
+          }
+          h1 {
+            margin: 30px;
+            text-align: center;
+          }
+
     </style>
 </head>
 
@@ -53,7 +106,7 @@
                         <li class="layui-nav-item" data-param="4"><a href="https://easychair.org/cfp/SETSS2024" >SETSS 2024 Workshop</a></li>
                         <li class="layui-nav-item" data-param="5"><a href="Program.html">Program</a></li>
                         <li class="layui-nav-item" data-param="6"><a href="Attending.html">Transport and Hotels</a></li>
-                        <li class="layui-nav-item" data-param="7"><a href="404.html">Registration</a></li>
+                        <li class="layui-nav-item" data-param="7"><a href="Registration.html">Registration</a></li>
                         <li class="layui-nav-item" data-param="8"><a href="Tourism.html">Tourism</a></li>
                     </ul>     
                 </div>
@@ -72,11 +125,11 @@
                                 <div class="head-img">
                                     <img src="https://fhk.ais.cn/file/web/images/logo-web.png">
                                 </div>
-                                <div class="page-second-span">Registration</div>
+                                <div class="page-second-span">Tourism</div>
                             </div>
                         </div>
                         <div class="container-command">
-                            <h1 class="h-span">Registration</h1>
+                            <h1 class="h-span">Tourism</h1>
                         </div>
     
                         <div class="container-footer">
@@ -118,61 +171,74 @@
                                 <div class="zsybar"
                                     style="text-align: center;z-index: 99;background-image: url(https://fhk.ais.cn/cms/website/editor/202309/371230926160255969.jpg);height:150px;">
                                     <p style="text-shadow: 1px 1px 5px rgba(0,0,0,0.5);"><span
-                                            style="font-size: 30px; font-family: Arial ;color:#fff;line-height:150px;"><br /></span>
+                                            style="font-size: 30px; font-family:  Arial ;color:#fff;line-height:150px;"><br /></span>
                                     </p>
                                 </div><!-- 背景图 -->
                                 <div class="select-Color zsybar2"
                                     style="opacity:0.1;height:150px;padding:auto 0px;margin: -150px -394px -10px;position: relative;z-index:99">
                                     <p style="text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 5px; text-align: center;"><span
-                                            style="font-size: 30px; font-family: Arial;color:#fff;line-height:150px;"><br /></span>
+                                            style="font-size: 30px; font-family:  Arial ;color:#fff;line-height:150px;"><br /></span>
                                     </p>
                                 </div>
                                 <p style="text-align: center;"><!-- 背景色 --></p>
                                 <div class="zsybar2" style="height:150px;padding:auto auto;margin: -150px -394px -10px;">
                                     <p style="text-align: center;"><span class="colorOne"
-                                            style="font-size: 30px; font-family: Arial ;line-height:150px;position: relative;z-index:100;font-weight: lighter">Registration</span>
+                                            style="font-size: 30px; font-family:  Arial ;line-height:150px;position: relative;z-index:100;font-weight: lighter">Tourism</span>
                                     </p>
                                 </div>
                                 <p style="text-align: justify;"><!-- 标题分割 --></p>
-                                <br>
-                                <div class="registration">
-                                    <h1 style="font-family: Arial; text-align: center;">The 6th Spring School on Engineering Trustworthy </h1>
-                                    <br>
-                                    <h1 style="font-family: Arial; text-align: center;">Software Systems (SETSS 2024) </h1>
-                                    <br>
-                                    <h1 style="font-family: Arial; text-align: center; font-size: 50px;">Conference Notice</h1>
-                                    <br>
-                                    <p style="font-size: 18px;font-family: Arial;">The "Sixth Trusted Software Systems Engineering (International) Spring School (SETSS 2024)" hosted by Southwest University will be held at Southwest University from April 15th to 21st, 2024. This spring the school will offer a series of lectures, academic reports and academic exchanges on cutting-edge research on software system engineering methods and tools, involving the most advanced methods and technological progress in the field of software engineering.</p>
-                                    <br>
-                                    <p style="font-size: 18px;font-family: Arial;">The spring school has invited renowned scholars such as <strong>Professor Moshe Y. Vardi, Professor Martin Georg Fränzle, Professor Kuldeep Meel, Professor Jean-Pierre Talpin and Professor Youcheng Sun</strong>. The event aims to facilitate in-depth discussions and extensive exchanges on interdisciplinary research combining disciplines and fields such as software engineering, formal methods, human-cyber-physcial systems, blockchain, and artificial intelligence.</p>
-                                    <br>
-                                    <strong style="font-size: 18px;font-family: Arial;">Meeting time:</strong>
-                                    <p style="font-size: 18px;font-family: Arial;">April 15-21, 2024</p>
-                                    <br>
-                                    <strong style="font-size: 18px;font-family: Arial;">Meeting venue:</strong>
-                                    <p style="font-size: 18px;font-family: Arial;">2 Tiansheng Road, Beibei District, Chongqing, Academic Lecture Hall 0114, No. 25, Southwest University.</p>
-                                    <br>
-                                    <strong style="font-size: 18px;font-family: Arial;">Meeting registration method:</strong>
-                                    <p style="font-size: 18px;font-family: Arial;">(1)On-site payment registration;(2) <a class="registrationLink" href="https://docs.qq.com/form/page/DQ09ReHppYWdkYm9D" target="_blank" style="color: red;">Online registration</a></p>
-                                    <br>
-                                    <strong style="font-size: 18px;font-family: Arial;">Conference registration fee：</strong>
-                                    <table>
-                                        <tr>
-                                            <td style="font-size: 18px;font-family: Arial;">April 15th - April 16th Lectures</td>
-                                            <td style="font-size: 18px;font-family: Arial;">1000 yuan per person</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-size: 18px;font-family: Arial;">April 17th - April 18th Lectures</td>
-                                            <td style="font-size: 18px;font-family: Arial;">1000 yuan per person</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="font-size: 18px;font-family: Arial;">Workshop</td>
-                                            <td style="font-size: 18px;font-family: Arial;">500 yuan per person</td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    <p style="font-size: 18px;font-family: Arial;">Registration fee includes lunch. The registration fee is designed based on lecturer remuneration, travel, conference organization and other expenses. It is also recommended that courses be selected in units of two days.</p>
-                                </div>
+
+                                    <h1 class="title">Recommended Tourist Attractions in Chongqing</h1>
+                                    <div class="slider">
+                                        <div class="slides">
+                                          <!-- 重复下面的结构来添加更多图片 -->
+                                          <div class="slide">
+                                            <img src="photo/tourist/cjsd.jpg" alt="长江索道">
+                                            <div class="slide-caption">
+                                                <h2>The Yangtze River Cableway (长江索道)</h2>
+                                                <p>Ride the aerial cable car across the Yangtze River for a panoramic view of the city's skyline and the majestic river below.</p>
+                                            </div>
+                                          </div>
+                                          <!-- ... 更多 slide divs ... -->
+                                          <div class="slide">
+                                            <img src="photo/tourist/cqk.jpg" alt="磁">
+                                            <div class="slide-caption">
+                                                <h2>Ciqikou Ancient Town (磁器口古镇)</h2>
+                                                <p>A historic town with traditional Chongqing architecture, famous for its teahouses, street snacks, and artisanal shops.</p>
+                                            </div>
+                                          </div>
+
+                                          <div class="slide">
+                                            <img src="photo/tourist/dazu.jpg" alt="大足石刻">
+                                            <div class="slide-caption">
+                                                <h2>Dazu Rock Carvings (大足石刻)</h2>
+                                                <p>A UNESCO World Heritage site with thousands of statues and carvings dating back to the 7th century, depicting and influenced by Buddhist, Confucian, and Taoist beliefs.</p>
+                                            </div>
+                                          </div>
+                                          <div class="slide">
+                                            <img src="photo/tourist/jfb.jpg" alt="解放碑">
+                                            <div class="slide-caption">
+                                                <h2>Jiefangbei CBD (解放碑商业区)</h2>
+                                                <p>The bustling commercial heart of the city, home to the Jiefang Monument and surrounded by shopping malls, office buildings, and eateries.</p>
+                                            </div>
+                                          </div>
+                                          <div class="slide">
+                                            <img src="photo/tourist/lzb.jpg" alt="李子坝">
+                                            <div class="slide-caption">
+                                                <h2>Liziba Light Rail Station</h2>
+                                                <p>Liziba Light Rail Station, a local internet-famous rail station where the light rail train passes directly through a residential building.</p>
+                                            </div>
+                                          </div>
+                                          <div class="slide">
+                                            <img src="photo/tourist/xns.jpg" alt="仙女山">
+                                            <div class="slide-caption">
+                                                <h2>The Fairy Mountain National Forest Park</h2>
+                                                <p>The Fairy Mountain National Forest Park is located within the territory of Wulong County in Chongqing and boasts the rare alpine meadow landscape of the south. Its forest sea, peculiar peaks, grasslands, and snowfields are referred to by tourists as the "Four Wonders" of Fairy Mountain.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
                             </div>  
                         </div>
                     </div>
@@ -198,44 +264,34 @@
                 </div>
             </div>
         </div>
-        <!-- 表格的style -->
+<!-- 用后删除这个style -->
         <style>
-            .registrationLink{
-            text-decoration: none;
-            color: #3498db;
-            position: relative;
-            display: inline-block;
-            transition: color 0.3s ease;
-        }
-            .registrationLink:hover {
-            color: #e74c3c;
-        }
-            .registrationLink::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: #3498db;
-            bottom: 0;
-            left: 0;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease;
-        }
-            .registrationLink:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-            }
-            
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
+            .testContainer  {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
                 text-align: center;
+            }
+            .container {
+                max-width: 600px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            a {
+                color: #0066ff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         </style>
         <style>

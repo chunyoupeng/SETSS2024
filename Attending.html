@@ -83,77 +83,7 @@
         .hotel {
             text-align: center;
         }
-        .slider {
-            width: 100%;
-            height: 800px; /* 根据需要调整高度 */
-            overflow: hidden;
-            position: relative;
-          }
-          
-          .slides {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            animation: slide 30s infinite; /* 每个幻灯片停留1.5秒,一共6张图片,所以动画时间为13.5秒 */
-          }
-          
-          .slide {
-            flex: 0 0 100%;
-            position: relative;
-          }
-          
-          .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-          
-          .slide-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            padding: 20px;
-          }
-          
-          @keyframes slide {
-            0% { transform: translateX(0); }
-            10% { transform: translateX(0); }
-            20% { transform: translateX(-100%); }
-            30% { transform: translateX(-100%); }
-            40% { transform: translateX(-200%); }
-            50% { transform: translateX(-200%); }
-            60% { transform: translateX(-300%); }
-            70% { transform: translateX(-300%); }
-            80% { transform: translateX(-400%); }
-            90% { transform: translateX(-400%); }
-            100% { transform: translateX(-500%); }
-          }
-          .hotel {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .hotel-header {
-            color: #333;
-            font-size: 20px;
-            margin: 0 0 10px;
-        }
-        .hotel-address {
-            color: #666;
-            font-size: 16px;
-        }
-        .hotel-phone {
-            color: #000;
-            font-weight: bold;
-        }
-        .rating {
-            color: #f80;
-            font-size: 18px;
-        }
+  
     </style>
 </head>
 
@@ -179,6 +109,8 @@
                         <li class="layui-nav-item" data-param="5"><a href="Program.html">Program</a></li>
                         <li class="layui-nav-item" data-param="6"><a href="Attending.html">Transport and Hotels</a></li>
                         <li class="layui-nav-item" data-param="7"><a href="Registration.html">Registration</a></li>
+
+                        <li class="layui-nav-item" data-param="8"><a href="Tourism.html">Tourism</a></li>
                     </ul>
                     <ul class="layui-nav  layui-icon flex-icon select-Color" id="layui-icon" style="display:none">
                         <i id="icon-down" class="layui-icon layui-icon-down"
@@ -371,56 +303,7 @@
                                         <div class="hotel-address">2nd Floor, Building No. 8, Tiansheng Li Street, Tiansheng Road (100 meters from Exit No. 1 of Tiansheng Station on Light Rail Line 6, 200 meters from Gate No. 2 of Southwest University)</div>
                                         <div class="hotel-phone">Phone: 19936673214</div>
                                     </div>
-                                    <h1 class="title">Recommended Tourist Attractions in Chongqing</h1>
-                                    <div class="slider">
-                                        <div class="slides">
-                                          <!-- 重复下面的结构来添加更多图片 -->
-                                          <div class="slide">
-                                            <img src="photo/tourist/cjsd.jpg" alt="长江索道">
-                                            <div class="slide-caption">
-                                                <h2>The Yangtze River Cableway (长江索道)</h2>
-                                                <p>Ride the aerial cable car across the Yangtze River for a panoramic view of the city's skyline and the majestic river below.</p>
-                                            </div>
-                                          </div>
-                                          <!-- ... 更多 slide divs ... -->
-                                          <div class="slide">
-                                            <img src="photo/tourist/cqk.jpg" alt="磁">
-                                            <div class="slide-caption">
-                                                <h2>Ciqikou Ancient Town (磁器口古镇)</h2>
-                                                <p>A historic town with traditional Chongqing architecture, famous for its teahouses, street snacks, and artisanal shops.</p>
-                                            </div>
-                                          </div>
-
-                                          <div class="slide">
-                                            <img src="photo/tourist/dazu.jpg" alt="大足石刻">
-                                            <div class="slide-caption">
-                                                <h2>Dazu Rock Carvings (大足石刻)</h2>
-                                                <p>A UNESCO World Heritage site with thousands of statues and carvings dating back to the 7th century, depicting and influenced by Buddhist, Confucian, and Taoist beliefs.</p>
-                                            </div>
-                                          </div>
-                                          <div class="slide">
-                                            <img src="photo/tourist/jfb.jpg" alt="解放碑">
-                                            <div class="slide-caption">
-                                                <h2>Jiefangbei CBD (解放碑商业区)</h2>
-                                                <p>The bustling commercial heart of the city, home to the Jiefang Monument and surrounded by shopping malls, office buildings, and eateries.</p>
-                                            </div>
-                                          </div>
-                                          <div class="slide">
-                                            <img src="photo/tourist/lzb.jpg" alt="李子坝">
-                                            <div class="slide-caption">
-                                                <h2>Liziba Light Rail Station</h2>
-                                                <p>Liziba Light Rail Station, a local internet-famous rail station where the light rail train passes directly through a residential building.</p>
-                                            </div>
-                                          </div>
-                                          <div class="slide">
-                                            <img src="photo/tourist/xns.jpg" alt="仙女山">
-                                            <div class="slide-caption">
-                                                <h2>The Fairy Mountain National Forest Park</h2>
-                                                <p>The Fairy Mountain National Forest Park is located within the territory of Wulong County in Chongqing and boasts the rare alpine meadow landscape of the south. Its forest sea, peculiar peaks, grasslands, and snowfields are referred to by tourists as the "Four Wonders" of Fairy Mountain.</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+                                  
                             </div>  
                         </div>
                     </div>
