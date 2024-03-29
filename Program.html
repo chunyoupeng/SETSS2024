@@ -134,16 +134,55 @@
                                     </p>
                                 </div>
                                 <p style="text-align: justify;"><!-- 标题分割 --></p>
-
-                                <!-- 主要内容,表示网站正在建设中，得到消息后删除这个div即可 -->
-                                <div class="testContainer">
-                                    <div class="container">
-                                        <h1>Site Under Construction</h1>
-                                        <p>Our website is currently under construction and will be available soon. Thank you for your patience.</p>
-                                        <p><a href="index.html">Return to Homepage</a></p>
-                                    </div>
-                                </div>
                                 
+                                <!-- 日程表 -->
+                                <table>
+                                    <thead>
+                                      <tr>
+                                        <th></th>
+                                        <th>morning</th>
+                                        <th>afternoon</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>2024.4.15</td>
+                                        <td>TODO</td>
+                                        <td>TODO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.16</td>
+                                        <td>TODO</td>
+                                        <td>Prof. Martin Georg Fränzle: AI Components for High Integrity, Safety-Critical Cyber-Physical Systems: Chances and Risks</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.17</td>
+                                        <td><p>Prof. Moshe Y. Vardi(Online): What Came First, Math or Computing?</p>
+                                            <p>Prof. Martin Georg Fränzle: AI Components for High Integrity, Safety-Critical Cyber-Physical Systems: Chances and Risks</p></td>
+                                        <td>Prof. Youcheng Sun: 1. Software Engineering for Explainable AI. 2. Automated Repair of AI</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.18</td>
+                                        <td>TODO</td>
+                                        <td>TODO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.19</td>
+                                        <td>TODO</td>
+                                        <td>TODO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.20</td>
+                                        <td>Workshop: Session 1 Reconfigurable Cyber-Physical Systems</td>
+                                        <td>Workshop: Session 2 Large Language Models</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2024.4.21</td>
+                                        <td>Workshop: Session 3 (Autonomous) Control</td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                             </div>  
                         </div>
                     </div>
@@ -169,36 +208,60 @@
                 </div>
             </div>
         </div>
-<!-- 用后删除这个style -->
-        <style>
-            .testContainer  {
-                font-family: Arial, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                background-color: #f0f0f0;
-                text-align: center;
-            }
-            .container {
-                max-width: 600px;
-                padding: 20px;
-                background-color: white;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            h1 {
-                color: #333;
-            }
-            a {
-                color: #0066ff;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
+<!-- 日程表的style -->
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+  
+    table {
+      width: 90%;
+      margin: 50px auto;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    th {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #35477d;
+      background-color: #35477d;
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    td{
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #35477d;
+      height: 100px;
+      font-size: 20px;
+      /* font-weight: bold; */
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    tr:hover {
+      background-color: #ddd;
+    }
+  
+    td:first-child {
+      width: 100px;
+    }
+    /* 在第五个单元格中绘制一条斜线 */
+    tr:nth-child(5) td:nth-child(2) {
+    position: relative;
+  }
+
+
+  </style>
         <style>
             /*底部*/
             .footer {
